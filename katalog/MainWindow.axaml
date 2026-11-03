@@ -16,6 +16,8 @@
                 <Button Click="OnAddClick">Dodaj pozycję</Button>
                 <Button Click="OnRefreshClick">Odśwież</Button>
             </StackPanel>
+            <Button Click="OnCountClick">Policz</Button>
+            <TextBlock Name="CountText" />
         </StackPanel>
     </Grid>
 </Window>
