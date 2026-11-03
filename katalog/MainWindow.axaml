@@ -2,8 +2,20 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="650" d:DesignHeight="500"
         x:Class="katalog.MainWindow"
-        Title="katalog">
-    Welcome to Avalonia!
+        Title="Katalog"
+        Width="650" Height="500">
+    <Grid Name="MainGrid" Margin="20">
+        <StackPanel Spacing="12">
+            <TextBlock Text="Katalog pozycji" FontSize="20" FontWeight="Bold" />
+            <ListBox Name="ItemsListBox" Height="220" />
+            <TextBlock Name="StatusText" Foreground="Gray" Text="Wybierz pozycję, aby przejść do szczegółów." />
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <Button Click="OnDetailsClick">Szczegóły</Button>
+                <Button Click="OnAddClick">Dodaj pozycję</Button>
+                <Button Click="OnRefreshClick">Odśwież</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
 </Window>
