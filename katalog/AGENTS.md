@@ -2,9 +2,8 @@
 
 - Interfejs po polsku, nazwy plików, klas i metod po angielsku.
 - Jeden ekran to jeden plik `.axaml` i jeden plik `.axaml.cs`.
-- Bez dodatkowych bibliotek — tylko to, co daje szablon.
-- Dane wczytujemy wyłącznie z pliku `dane/pozycje.txt`, format `tytuł;rok;ocena`.
-- Wszystkie pliki w UTF-8.
+- Nie dodawaj do projektu żadnych nowych pakietów NuGet ani zewnętrznych bibliotek — używaj wyłącznie tego, co znajduje się w początkowym szablonie.
+- Wszystkie operacje na danych (odczyt i dopisywanie) wykonuj wyłącznie na pliku `dane/pozycje.txt`, w formacie `tytuł;rok;ocena`.
+- Wszystkie pliki zapisuj w kodowaniu UTF-8.
 - Nie zmieniaj plików, o które nie było prośby.
-- Krótkie metody: jedna rzecz, jedna metoda.
-
+- Metoda nie może być dłuższa niż 20 linii kodu. Jedna rzecz, jedna metoda.
