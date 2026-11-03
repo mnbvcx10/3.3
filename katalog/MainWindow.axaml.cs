@@ -95,7 +95,7 @@ public partial class MainWindow : Window
 
     private void OnAddClick(object? sender, RoutedEventArgs e)
     {
-        StatusText.Text = "Formularz dodawania zostanie otwarty.";
+        Content = new AddView(this);
     }
 
     private void OnRefreshClick(object? sender, RoutedEventArgs e)
